@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forecast Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-bar"
+            id="search-input"
+          />
+          <input type="submit" value="search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="city" id="city-result"></h1>
+            <p>
+              <span id="display-time">Tuesday 14:49</span>,
+              <span id="condition"> Sunny</span><br />
+              humidity: <strong id="humidity"></strong> wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="temperature-now">
+            <span id="icon"> </span>
+            <span class="temperature" id="current-temperature"></span>
+            <span class="temperature-unit">ºF</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/LatoyaNatashaC" target="_blank"
+            >Latoya Natasha Campbell</a
+          >
+          and is
+          <a href="https://github.com/LatoyaNatashaC" target="_blank">
+            on GitHub</a
+          >
+          and
+          <a
+            href="https://functioning-prototype-weather-app.netlify.app/"
+            target="_blank"
+            >hosted on Netflify</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
