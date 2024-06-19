@@ -9,6 +9,16 @@ body {
   display: block;
   margin: 8px;
 }
+button {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid;
+  border-radius: 10px;
+  color: #885df1;
+  background: #f8d8fb;
+  font-size: 16px;
+  padding: 10px 15px;
+}
 
 .app-container {
   background: white;
