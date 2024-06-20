@@ -12,7 +12,7 @@ body {
 button {
   display: block;
   margin: 0 auto;
-  border: 1px solid;
+  border: 1px;
   border-radius: 10px;
   color: #885df1;
   background: #f8d8fb;
@@ -66,7 +66,7 @@ header {
   font-size: 16px;
   background-color: #f8d8fb;
   color: #885df1;
-  border: 1px solid;
+  border: 1px;
   padding: 20px 40px;
   line-height: 1;
   border-radius: 5px;
