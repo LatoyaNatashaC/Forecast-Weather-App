@@ -134,9 +134,9 @@ a {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
-.forecast-temperature-max {
+.weather-forecast-temperature-max {
   color: #f65282;
 }
-.forecast-temperature-min {
-  opacity: 0.6;
+.weather-forecast-temperature-min {
+  color: #53a8b6;
 }
