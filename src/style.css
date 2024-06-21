@@ -131,6 +131,12 @@ a {
   font-size: 16px;
   color: rgba(39, 33, 66, 0.4);
 }
+.weather-forecast-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+}
 .weather-forecast-temperatures {
   font-size: 13px;
 }
