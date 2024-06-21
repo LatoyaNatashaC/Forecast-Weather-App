@@ -102,4 +102,4 @@ function displayForecast(response) {
 let searchButton = document.querySelector(".search-button");
 searchButton.addEventListener("click", search);
 
-searchCity("California");
+searchCity("Los Angeles");
