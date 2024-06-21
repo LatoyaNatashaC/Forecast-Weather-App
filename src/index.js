@@ -10,6 +10,7 @@ function changeTheme() {
 
 let themeButton = document.querySelector(".theme-button");
 themeButton.addEventListener("click", changeTheme);
+
 function displayWeather(response) {
   let temperatureElement = Math.round(response.data.temperature.current);
   let displayTemperature = document.querySelector("#current-temperature");
@@ -28,6 +29,8 @@ function displayWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed} mph`;
   timeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}"class=".sun-icon"/>`;
+
+  getForecast(response.data.city);
 }
 function formatDate(date) {
   let hours = date.getHours();
@@ -57,16 +60,20 @@ function searchCity(city) {
 
 function search(event) {
   event.preventDefault();
-
   let searchInput = document.querySelector("#search-input");
+
   searchCity(searchInput.value);
 }
 
 function getForecast(city) {
   let apiKey = "4f3b0tf3219b4c7758082d0o48eabbbe";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+  axios(apiUrl).then(displayForecast);
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
+
   let forecastElement = document.querySelector("#forecast");
   let forecastHtml = "";
 
@@ -95,5 +102,4 @@ function displayForecast() {
 let searchButton = document.querySelector(".search-button");
 searchButton.addEventListener("click", search);
 
-searchCity("Los Angeles");
-displayForecast();
+searchCity("California");
