@@ -62,11 +62,15 @@ function search(event) {
   searchCity(searchInput.value);
 }
 
+function getForecast(city) {
+  let apiKey = "4f3b0tf3219b4c7758082d0o48eabbbe";
+}
+
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   let forecastHtml = "";
 
-  let days = ["Tue", "Wed", "Thu", "Fri", "sat"];
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
 
   days.forEach(function (day) {
     forecastHtml =
